@@ -1,0 +1,613 @@
+@mainColor: #2ed775;
+// 表格不对齐
+body .el-table th.gutter {
+  display: table-cell !important;
+}
+.el-table thead th {
+  font-size: 14px;
+  color: #000000;
+  font-weight: 200;
+}
+// 表格的的checkbox改变颜色
+.el-checkbox__inner:hover {
+  border-color: @mainColor;
+}
+.el-checkbox__input.is-checked .el-checkbox__inner,
+.el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  background-color: @mainColor;
+  border-color: @mainColor;
+}
+.el-checkbox__input.is-focus .el-checkbox__inner {
+  border-color: @mainColor;
+}
+// 分页样式
+.el-pagination.is-background .btn-next,
+.el-pagination.is-background .btn-prev,
+.el-pagination.is-background .el-pager li {
+  border: 1px solid #eaeef2;
+  background-color: #fff;
+}
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+  background-color: @mainColor;
+}
+.el-pagination.is-background .el-pager li:not(.disabled):hover {
+  color: @mainColor;
+}
+.el-pagination.is-background .el-pager li.active:hover {
+  color: #fff;
+}
+// 表格文字居中
+.el-table .has-gutter th {
+  text-align: center;
+}
+.el-table__body tbody td {
+  text-align: center;
+}
+// 分页jumper布局的边框
+.el-input__inner:focus {
+  border-color: @mainColor;
+}
+// 下拉菜单样式
+.el-dropdown-menu__item:focus,
+.el-dropdown-menu__item:not(.is-disabled):hover {
+  background-color: #fff;
+  color: @mainColor;
+}
+// table 文字
+.el-table {
+  color: #000000;
+}
+// fit 下拉菜单样式
+.el-select {
+  width: 222px;
+  height: 38px;
+}
+.el-input__inner {
+  border: 1px solid #d1d1d1;
+}
+.el-select .el-input.is-focus .el-input__inner {
+  border-color: @mainColor;
+}
+.el-select-dropdown__item.selected {
+  color: @mainColor;
+}
+.el-select .el-input__inner:focus {
+  border-color: @mainColor;
+}
+// 上传组件样式
+.el-upload {
+  width: 191px;
+  height: 127px;
+  background-color: #fff;
+  &:hover {
+    border-color: @mainColor;
+  }
+  &:focus {
+    border-color: @mainColor;
+  }
+}
+.el-upload-list--picture-card .el-upload-list__item {
+  width: 191px;
+  height: 127px;
+}
+// post页面的input框样式
+.post-content {
+  .post-mr {
+    margin-right: 68px;
+  }
+  .el-form-item {
+    width: 439px;
+    position: relative;
+    display: inline-block;
+    .el-form-item__label {
+      color: #000;
+      &::before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 20px;
+      }
+    }
+  }
+  .el-form-item.is-success .el-input__inner,
+  .el-form-item.is-success .el-input__inner:focus,
+  .el-form-item.is-success .el-textarea__inner,
+  .el-form-item.is-success .el-textarea__inner:focus {
+    border-color: @mainColor;
+  }
+  .el-input {
+    width: 351px;
+    height: 40px;
+  }
+  .salary {
+    .el-form-item {
+      width: 439px;
+    }
+    .el-select {
+      width: 151px;
+    }
+  }
+  .place {
+    .el-input {
+      width: 410px;
+    }
+  }
+  .cate {
+    .el-cascader {
+      margin-left: 25px;
+    }
+    .el-input {
+      margin-left: 0;
+    }
+  }
+}
+// 弹框样式
+.mj-header {
+  .approve-dialog {
+    .el-dialog {
+      border-radius: 10px;
+      padding: 0 38px;
+    }
+
+    .el-dialog__header {
+      height: 59px;
+      line-height: 59px;
+      border-bottom: 1px solid #dbdbdb;
+      padding: 0;
+    }
+    .el-dialog__body {
+      padding: 0;
+    }
+    .el-dialog__footer {
+      padding: 0;
+      text-align: left;
+      padding-top: 28px;
+      padding-bottom: 47px;
+      .el-button--primary {
+        width: 419px;
+        height: 44px;
+        background-color: @mainColor;
+        border: none;
+        border-radius: 22px;
+        margin-left: 48px;
+      }
+    }
+  }
+}
+// x号样式
+.el-dialog__headerbtn:hover .el-dialog__close {
+  color: @mainColor;
+}
+.el-dialog__headerbtn:focus .el-dialog__close {
+  color: @mainColor;
+}
+.el-message-box__headerbtn:focus .el-message-box__close,
+.el-message-box__headerbtn:hover .el-message-box__close {
+  color: @mainColor;
+}
+// 确认弹框样式
+.el-message-box {
+  .el-button--default {
+    &:hover {
+      color: @mainColor;
+      background-color: #fff;
+      border-color: @mainColor;
+    }
+    &:focus {
+      border-color: @mainColor;
+    }
+  }
+  .el-button--primary {
+    background-color: @mainColor;
+    border: 1px solid transparent;
+    &:hover {
+      color: #fff;
+      background-color: @mainColor;
+    }
+  }
+}
+// job 页面的所有职位的状态下拉框的样式
+.mj-job {
+  .status {
+    .el-select {
+      .el-input__inner {
+        border: none;
+        color: #000;
+        &::-webkit-input-placeholder {
+          color: #000;
+        }
+        &::-moz-input-placeholder {
+          color: #000;
+        }
+        &::-ms-input-placeholder {
+          color: #000;
+        }
+      }
+    }
+  }
+}
+.job-search {
+  .status {
+    .el-select {
+      width: 98px;
+    }
+  }
+}
+// filtersearch 样式修改
+.mj-filter-search {
+  .el-select {
+    .el-input__inner {
+      padding-left: 0;
+      border: none;
+      &::-webkit-input-placeholder {
+        color: #000;
+      }
+      &::-moz-input-placeholder {
+        color: #000;
+      }
+      &::-ms-input-placeholder {
+        color: #000;
+      }
+    }
+  }
+  .position {
+    margin-right: 19px;
+    .el-select {
+      width: 66px;
+    }
+  }
+  .gender {
+    .el-select {
+      width: 100px;
+    }
+    .el-input__inner {
+      padding-left: 30px;
+    }
+  }
+  .experience,
+  .salary {
+    .el-select {
+      width: 100px;
+    }
+  }
+  .education {
+    .el-select {
+      width: 100px;
+    }
+    .el-input__inner {
+      padding-left: 30px;
+    }
+  }
+  .place {
+    .el-select {
+      width: 94px;
+    }
+  }
+}
+// 企业福利的input样式
+.company-weal {
+  .el-input.is-disabled .el-input__inner {
+    background-color: #fff;
+  }
+}
+.is-multiple {
+  width: 678px;
+  height: 491px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  .el-select-dropdown__list {
+    width: 100%;
+    height: 100%;
+    padding: 43px 43px 0 43px;
+  }
+  .el-scrollbar {
+    height: 100%;
+  }
+  .el-scrollbar__wrap {
+    overflow: hidden;
+  }
+  .el-select-dropdown__item {
+    width: 185px;
+    height: 44px;
+    float: left;
+    text-align: center;
+    line-height: 44px;
+    border: 1px solid #e8e8e8;
+    margin-right: 17px;
+    margin-bottom: 17px;
+    &:nth-child(3n) {
+      margin-right: 0px;
+    }
+  }
+  .el-select-dropdown__wrap {
+    width: 100%;
+    max-height: 411px;
+  }
+}
+// hover效果重置
+.el-select-dropdown__item.hover,
+.el-select-dropdown__item:hover {
+  background-color: #fff;
+  color: @mainColor;
+}
+.el-select-dropdown.is-multiple .el-select-dropdown__item.selected {
+  color: @mainColor;
+}
+// 表格没有数据时候的样式修改
+.el-checkbox__input.is-disabled .el-checkbox__inner {
+  background-color: #fff;
+}
+.el-table--scrollable-x .el-table__body-wrapper {
+  overflow-x: hidden;
+}
+// 发布职位页面样式重置
+.post-select {
+  min-width: 179px !important;
+}
+
+.type-select {
+  min-width: 351px !important;
+}
+.el-dialog__wrapper {
+  .el-dialog__header {
+    padding: 0;
+    padding-top: 48px;
+  }
+  .el-dialog__body {
+    padding: 0;
+  }
+}
+// loading样式
+.el-loading-spinner {
+  .path {
+    stroke: @mainColor;
+  }
+}
+// 日历样式
+.wh_content_all {
+  background-color: #fff !important;
+  border: 1px solid #e8e8e8;
+  border-top: none;
+  .wh_top_changge {
+    background-color: #2ecc71;
+    li {
+      color: #fff;
+    }
+    .wh_jiantou1 {
+      border-top: 2px solid #fff;
+      border-left: 2px solid #fff;
+    }
+    .wh_jiantou2 {
+      border-top: 2px solid #fff;
+      border-right: 2px solid #fff;
+    }
+  }
+  .wh_content {
+    .wh_content_item {
+      color: #999999;
+    }
+    .wh_content_item .wh_isToday {
+      background-color: #666666;
+    }
+    .wh_content_item .wh_chose_day {
+      background-color: @mainColor;
+    }
+    .wh_item_date:hover {
+      border-radius: 50%;
+      background-color: @mainColor;
+    }
+  }
+}
+// 弹框单选框样式
+.interview-time {
+  .el-radio {
+    margin-right: 15px;
+    margin-bottom: 11px;
+    &:nth-child(8n) {
+      margin-right: 0;
+    }
+  }
+  .el-radio__input {
+    display: none;
+  }
+  .el-radio__label {
+    display: block;
+    width: 86px;
+    height: 86px;
+    padding: 0px;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    text-align: center;
+    padding-top: 22px;
+  }
+  .el-radio__input.is-checked + .el-radio__label {
+    color: @mainColor;
+    border-color: @mainColor;
+    .icon-xuanzhong1 {
+      display: block;
+    }
+  }
+}
+// resume表格样式修改
+.resume-table,
+.inbox-table,
+.job-table,
+.fit-booked-interviewed-table,
+.mj-fit-table {
+  .has-gutter {
+    .is-leaf {
+      background-color: #f4fdf8;
+      border-color: #f4fdf8;
+    }
+  }
+}
+// 级联选择器样式
+.el-cascader-menu__item.is-active {
+  color: @mainColor;
+}
+.el-cascader .el-input.is-focus .el-input__inner {
+  border-color: @mainColor;
+}
+// 登录样式修改
+.bar {
+  width: 360px;
+  .el-tabs {
+    width: 100%;
+    .el-tabs__item {
+      font-size: 16px;
+      color: #000;
+      &:hover {
+        color: #2ccb6f;
+      }
+    }
+    .el-tabs__item.is-active {
+      color: #2ccb6f;
+    }
+    .el-tabs__nav-wrap::after {
+      height: 1px;
+      background-color: #e8e8e8;
+    }
+    .el-tabs__active-bar {
+      background-color: #2ccb6f;
+    }
+  }
+}
+// 职位发布样式
+.job-type {
+  .el-radio {
+    margin-right: 33px;
+  }
+  .el-radio__input {
+    display: none;
+  }
+  .el-radio__label {
+    width: 234px;
+    height: 40px;
+    border: 1px solid #e8e8e8;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    position: relative;
+  }
+  .el-radio__input.is-checked + .el-radio__label {
+    color: @mainColor;
+    border-color: @mainColor;
+    .iconfont {
+      display: block;
+    }
+  }
+}
+// 提示样式
+.el-message-box {
+  height: 200px;
+  .el-message-box__header {
+    padding-bottom: 37px;
+  }
+  .el-message-box__content {
+    padding-bottom: 33px;
+    height: 24px;
+    .el-message-box__status,
+    .el-icon-warning {
+      vertical-align: middle;
+      color: #ff0000;
+    }
+  }
+  .el-message-box__btns {
+    margin-top: 28px;
+    .el-button {
+      width: 91px;
+      height: 32px;
+    }
+    .el-button--primary {
+      margin-left: 19px;
+    }
+  }
+}
+.el-message--success {
+  background-color: #fff;
+}
+.el-select-dropdown__item {
+  height: 42px;
+  line-height: 42px;
+}
+.el-cascader-menu__item {
+  height: 42px;
+  line-height: 26px;
+}
+.mj-basic-info {
+  .mr {
+    margin-right: 82px;
+  }
+  .el-form-item__label {
+    color: #000;
+  }
+  .el-input {
+    width: 370px;
+  }
+  .el-form-item {
+    width: 452px;
+    position: relative;
+    display: inline-block;
+    .el-form-item__label::before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 20px;
+    }
+  }
+
+  .el-form-item.is-success .el-input__inner,
+  .el-form-item.is-success .el-input__inner:focus,
+  .el-form-item.is-success .el-textarea__inner,
+  .el-form-item.is-success .el-textarea__inner:focus {
+    border-color: @mainColor;
+  }
+  .el-form-item.is-success .el-input__inner {
+    border-color: #d1d1d1;
+  }
+
+  .company-address {
+    .el-form-item {
+      width: 639px;
+    }
+  }
+  .company-weal {
+    .el-input {
+      width: 558px;
+    }
+  }
+  .connection-content {
+    .con-mr {
+      margin-right: 135px;
+    }
+    .el-form-item {
+      width: 424px;
+    }
+    .phone {
+      .el-form-item {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.fit-select {
+  min-width: 370px !important;
+}
+.gender-select {
+  min-width: 402px !important;
+}
+.profile-dialog {
+  .el-dialog {
+    border-radius: 5px;
+  }
+  .el-dialog__header {
+    border-bottom: 1px solid #ebebeb;
+  }
+  .el-dialog__body {
+    padding-bottom: 52px;
+  }
+}

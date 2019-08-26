@@ -1,0 +1,3 @@
+安装依赖项 npm i
+启动项目   npm run dev
+打包项目   npm run build

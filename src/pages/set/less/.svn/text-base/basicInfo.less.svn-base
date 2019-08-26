@@ -1,0 +1,174 @@
+.mj-basic-info {
+  width: 1078px;
+  height: 1217px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 0 30px;
+
+  .ipt {
+    width: 222px;
+    height: 38px;
+    border: 1px solid #d1d1d1;
+    padding-left: 12px;
+    border-radius: 4px;
+    &:focus {
+      border-color: #2ed775;
+    }
+  }
+  .basic-info {
+    font-size: 16px;
+    padding: 22px 0 17px 0;
+    border-bottom: 1px solid #dbdbdb;
+    color: #000;
+    .tips {
+      font-size: 14px;
+      position: relative;
+    }
+    .mi {
+      font-size: 20px;
+      color: #f56c6c;
+      position: absolute;
+      top: 0;
+    }
+  }
+  .basic-content {
+    width: 100%;
+    height: 820px;
+    font-size: 14px;
+    padding-left: 26px;
+    color: #000;
+    .cname {
+      margin-right: 40px;
+    }
+    .cscale {
+      margin-right: 50px;
+    }
+    .company-name {
+      padding-top: 28px;
+    }
+    .type {
+      .line {
+        margin: 0 9px 0 10px;
+        color: #d1d1d1;
+      }
+    }
+    .company-address {
+      input {
+        width: 558px;
+      }
+    }
+    .company-intro {
+      textarea {
+        width: 909px;
+        height: 179px;
+        vertical-align: top;
+        resize: none;
+        font-size: 14px;
+        color: #000;
+        padding: 13px 0 0 17px;
+        outline: none;
+        border: 1px solid #d1d1d1;
+        border-radius: 5px;
+        &:focus {
+          border-color: #2ed775;
+        }
+      }
+    }
+    .company-weal {
+      padding-top: 37px;
+      .el-select {
+        width: 558px;
+      }
+      .choice {
+        width: 88px;
+        height: 41px;
+        cursor: pointer;
+        background-color: #2ed775;
+        color: #fff;
+        border-radius: 3px;
+        margin-left: 19px;
+        display: inline-block;
+        text-align: center;
+        line-height: 41px;
+      }
+      .confirm {
+        width: 125px;
+        height: 44px;
+        background-color: #2ed775;
+        color: #fff;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 22px;
+        left: 50%;
+        cursor: pointer;
+        transform: translateX(-50%);
+        text-align: center;
+        line-height: 44px;
+      }
+      .close {
+        position: absolute;
+        top: 6px;
+        right: 6px;
+        font-size: 17px;
+        color: #909399;
+        &:hover {
+          color: #2ed775;
+        }
+      }
+    }
+    .employee-mien {
+      padding-top: 43px;
+      .upload-model {
+        padding-top: 33px;
+      }
+    }
+  }
+  .connection {
+    font-size: 16px;
+    color: #000;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #dbdbdb;
+    margin-top: 46px;
+    padding-left: 26px;
+  }
+  .connection-content {
+    padding-top: 34px;
+    padding-left: 26px;
+    .iptmr {
+      margin-right: 46px;
+    }
+  }
+  .btn {
+    margin-top: 36px;
+    .middle-btn {
+      width: 244px;
+      margin: 0 auto;
+    }
+    .el-button {
+      width: 110px;
+      height: 44px;
+      border-radius: 22px;
+      border: none;
+    }
+    .el-button--success {
+      background-color: #2ed775;
+    }
+    .el-button--default {
+      border: 1px solid #2ed775;
+      color: #2ed775;
+      margin-left: 20px;
+    }
+  }
+  .el-cascader {
+    width: 222px;
+  }
+}
+.mj-mask {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+  background: #000;
+}
